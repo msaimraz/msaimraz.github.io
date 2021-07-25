@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <h1>Question:1</h1>
+    <h3>Calculate total price of each item and all items;</h3>
+    <table border="2px solid black" style="text-align: center; width: 25%;">
+        <thead>
+            <tr>
+                <th>Name of Items</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>juice</td>
+                <td>3</td>
+                <td>50</td>
+                <td rowspan="4">
+                    <button onclick="btn()">Calculate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>cookie</td>
+                <td>9</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>shirt</td>
+                <td>1</td>
+                <td>880</td>
+            </tr>
+            <tr>
+                <td>pen</td>
+                <td>2</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <button onclick="btn2()">Total</button>
+                </td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Question:2</h1>
+    <h3>Check if age and country properties exist in object or not.</br>
+        Also check firstName and lastName properties in object.</h3>
+    <table border="2px solid black" style="text-align: center; width: 25%;">
+
+        <tr>
+            <th>Name</th>
+            <td>Abc</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>abc@xyz.com</td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td>abc123</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>male</td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td>karachi</td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <td>Pakistan</td>
+        </tr>
+        <tr>
+            <th>Propertie exist in object or not</th>
+            <td><button onclick="key()">Check</button></td>
+        </tr>
+    </table>
+    <script>
+
+        // Question:1
+
+        var itemsArray = [
+            { name: 'juice', price: 50, quantity: 3 },
+            { name: 'cookie', price: 30, quantity: 9 },
+            { name: 'shirt', price: 880, quantity: 1 },
+            { name: 'pen', price: 100, quantity: 2 }
+        ];
+        // Calculate total price of each item and all items;
+        function btn() {
+            let item = prompt('Enter the name of an item');
+
+            switch (item) {
+                case 'juice':
+                    items = 0;
+                    break;
+                case 'cookie':
+                    items = 1;
+                    break;
+                case 'shirt':
+                    items = 2;
+                    break;
+                case 'pen':
+                    items = 3;
+                    break;
+                default:
+                    console.log('invalid item');
+            }
+            let sum = itemsArray[items].price * itemsArray[items].quantity;
+            console.log(item + ' total price is ' + sum);
+        }
+
+        function btn2() {
+            let sum2 = itemsArray[0].price + itemsArray[1].price + itemsArray[2].price + itemsArray[3].price;
+            console.log('The Total Price of All Item is ' + sum2);
+        }
+
+        // Question:2
+
+        let data = {
+            name: 'Abc',
+            email: 'abc@xyz.com',
+            password: 'abc123',
+            age: 00,
+            gender: 'male',
+            city: 'karachi',
+            country: 'pakistan',
+        };
+        // Check if age and country properties exist in object or not
+        // Also check firstName and lastName properties in object
+
+        function key() {
+            let keys = prompt('Enter a key.');
+            let haskey = keys in data;
+            if (haskey) {
+                console.log(keys + ' Propertie Exist in Object');
+            } else {
+                console.log(keys + " Propertie doesn't Exist in Object");
+            };
+        };
+        // OR
+        // console.log(data.hasOwnProperty(""));
+
+        // Question:3
+
+        function Record(name, email, gender, city) {
+            this.name = name;
+            this.email = email;
+            this.gender = gender;
+            this.city = city;
+        };
+        // Now create multiple records using the constructor
+
+        var user1 = new Record('Abc', 'abc@xyz.com', 'male', 'karachi');
+        var user2 = new Record('Def', 'def@xyz.com', 'female', 'islamabad');
+        var user3 = new Record('Ghi', 'ghi@xyz.com', 'male', 'karachi');
+        var user4 = new Record('Qwe', 'Qwe@xyz.com', 'female', 'islamabad')
+
+        // Question:4
+
+        function Record2(name, gender, address, education, profession) {
+            this.name = name;
+            this.gender = gender;
+            this.address = address;
+            this.education = education;
+            this.profession = profession;
+        };
+          
+    </script>
+</body>
+
+</html>
