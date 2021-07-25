@@ -210,14 +210,21 @@
             this.education = education;
             this.profession = profession;
         };
+        
+         var arr = [];
 
-        function getInputValue(){
+        function getInputValue() {
             var inputVal1 = document.getElementById("name").value;
-            var inputVal2 = document.getElementById("address").value;
-
+            var inputVal2 = document.getElementById("gender").value;
+            var inputVal3 = document.getElementById("address").value;
+            var inputVal4 = document.getElementById("education").value;
+            var inputVal5 = document.getElementById("profession").value;
             
+            var rec1 = new Record2(inputVal1, inputVal2, inputVal3, inputVal4, inputVal5);
+            arr.push(rec1);
+            localStorage.setItem("rec1", JSON.stringify(rec1));
+                      
         }
-        var rec1 = new Record2(inputVal1, inputVal2 )
     </script>
 </body>
 
