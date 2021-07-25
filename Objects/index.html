@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- Question:1 -->
     <h1>Question:1</h1>
     <h3>Calculate total price of each item and all items;</h3>
     <table border="2px solid black" style="text-align: center; width: 25%;">
@@ -56,7 +57,7 @@
             </tr>
         </tfoot>
     </table>
-
+    <!-- Question:2 -->
     <h1>Question:2</h1>
     <h3>Check if age and country properties exist in object or not.</br>
         Also check firstName and lastName properties in object.</h3>
@@ -91,6 +92,35 @@
             <td><button onclick="key()">Check</button></td>
         </tr>
     </table>
+    <!-- Question:4 -->
+    <h1>Question:4</h1>
+    <h3>Create a constructor function which holds following
+        properties:
+        Name, gender, address, education, profession,
+        Enter all records one by one. </h3>
+    <form method="get" style="text-align: center; line-height: 40px">
+        Name : <input type="text" id="name"><br>       
+        Gender : <input type="radio" name="gender" id="gender">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="male">female</label> <br>
+        Address : <input type="text" id="address"> <br>
+        <label for="education">Education : </label><select name="edu" id="education">
+            <option value="">-</option>
+            <option value="matric">Matric</option>
+            <option value="inter">Intermediate</option>
+            <option value="graduate">Graduate</option>
+            <option value="master">Masters</option>
+        </select> <br>
+        <label for="profession">Profession</label><select name="prof" id="profession">
+            <option value="">-</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="doctor">Doctor</option>
+            <option value="developer">Developer</option>
+        </select> <br>
+        <input type="submit" value="Submit" onclick="getInputValue()">
+    </form>    
     <script>
 
         // Question:1
@@ -180,7 +210,14 @@
             this.education = education;
             this.profession = profession;
         };
-          
+
+        function getInputValue(){
+            var inputVal1 = document.getElementById("name").value;
+            var inputVal2 = document.getElementById("address").value;
+
+            
+        }
+        var rec1 = new Record2(inputVal1, inputVal2 )
     </script>
 </body>
 
