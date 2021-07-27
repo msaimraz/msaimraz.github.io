@@ -97,12 +97,15 @@
     <h3>Create a constructor function which holds following
         properties:
         Name, gender, address, education, profession,
-        Enter all records one by one. </h3>
+        Enter all records one by one. Hint: 
+        1: use select box for education and profession, 
+        2: use radio box for gender
+        Bonus : you can use localStorage to save records </h3>
     <form method="get" style="text-align: center; line-height: 40px">
         Name : <input type="text" id="name"><br>       
-        Gender : <input type="radio" name="gender" id="gender">
+        Gender : <input type="radio" name="gender" value="male" id="gender">
         <label for="male">Male</label>
-        <input type="radio" name="gender" id="gender">
+        <input type="radio" name="gender" value="female" id="gender">
         <label for="male">female</label> <br>
         Address : <input type="text" id="address"> <br>
         <label for="education">Education : </label><select name="edu" id="education">
