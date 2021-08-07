@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz - Plsy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .choice-container {
+        display: flex;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        font-size: 1.8rem;
+        border: 0.1rem solid rgb(86, 165, 235, 0.25);
+        background-color: white;
+    }
+
+    .choice-container:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+    }
+
+    .choice-abcd {
+        padding: 1.5rem 2.5rem;
+        background-color: #56a5eb;
+        color: white;
+    }
+
+    .choice-text {
+        padding: 1.5rem;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <h2 id="question">What is the answer to this question?</h2>
+            <div class="choice-container">
+                <p class="choice-abcd">A</p>
+                <p class="choice-text">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-abcd">B</p>
+                <p class="choice-text">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-abcd">C</p>
+                <p class="choice-text">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-abcd">D</p>
+                <p class="choice-text">Choice 4</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/game.js"></script>
+</body>
+
+</html>
