@@ -1,2 +1,0 @@
-# saimraza.me
-Resume
