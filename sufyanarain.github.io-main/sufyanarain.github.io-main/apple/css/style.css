@@ -1,0 +1,572 @@
+  @font-face {
+      font-family: "San Francisco";
+      font-weight: 400;
+      src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "San Francisco";
+      text-decoration: none;
+      list-style: none;
+  }
+  /* ******* navbar styling *********** */
+  
+  .navBar {
+      background-color: rgba(49, 47, 47, 0.9);
+      color: rgb(197, 197, 197);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 5;
+      /* background-image: url("images/bahriya1.jpg"); */
+  }
+  
+  .navBar ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 44px;
+      list-style: none;
+      font-size: 16px;
+  }
+  
+  .navBar ul li {
+      padding: 0px 37px;
+  }
+  
+  .fa-apple,
+  .fa-shopping-bag,
+  .fa-search {
+      font-size: 20px;
+  }
+  
+  .appleNav {
+      font-size: 20px !important;
+  }
+  
+  .fa-search {
+      font-weight: lighter;
+  }
+  /* ****************  covid alert **************** */
+  
+  .covidAlert {
+      background-color: #0071E3;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 44px;
+  }
+  
+  .covidAlert a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      text-shadow: 1px 0px 1px rgb(177, 177, 177);
+  }
+  /* ************ Shop online card styling ********************  */
+  
+  .shopeOnline {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(251, 251, 238, 0.075);
+      font-size: 16px;
+      text-shadow: 1px 0px 1px rgb(185, 185, 185);
+      color: rgb(58, 58, 58);
+  }
+  
+  .shopeOnline p a {
+      color: #0071E3;
+  }
+  /* ************* first section styling ************** */
+  
+  .firstSec {
+      background-image: url('../images/firstsection.jpg');
+      background-repeat: no-repeat;
+      height: 635px;
+      /* background-attachment: fixed; */
+      background-position-x: center;
+      text-align: center;
+      padding-top: 55px;
+  }
+  
+  .firstSec h1 {
+      font-size: 55px;
+      color: rgb(19, 19, 19);
+  }
+  
+  .firstSec h3 {
+      font-size: 31px;
+      font-weight: lighter;
+      margin: 7px 0px 12px 0px;
+  }
+  
+  .firstSec p {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: rgb(119, 119, 119);
+      text-shadow: 1px 0px 2px rgb(218, 218, 218);
+  }
+  
+  .firstSec a {
+      color: #0071E3;
+      font-size: 23px;
+      margin: 0px 15px;
+  }
+  /* font-weight: 600; */
+  /* ************* second Section styling ********** */
+  
+  .secondSec {
+      background-image: url('../images/iphone_12_pro_us__e5oyysg4k0ya_large.jpg');
+      background-repeat: no-repeat;
+      height: 635px;
+      /* background-attachment: fixed; */
+      background-position-x: center;
+      text-align: center;
+      padding-top: 55px;
+  }
+  
+  .secondSec h1 {
+      font-size: 55px;
+      color: rgb(228, 228, 228);
+  }
+  
+  .secondSec h3 {
+      font-size: 31px;
+      font-weight: lighter;
+      color: rgb(228, 228, 228);
+      margin: 7px 0px 12px 0px;
+  }
+  
+  .secondSec p {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: rgb(119, 119, 119);
+      /* text-shadow: 1px 0px 2px rgb(218, 218, 218); */
+  }
+  
+  .secondSec a {
+      color: #0071E3;
+      font-size: 23px;
+      margin: 0px 15px;
+  }
+  /* ************* second Section styling ********** */
+  
+  .thirdSec {
+      /* background-image: url('../images/watchSec.jpg');
+      background-repeat: no-repeat; */
+      height: 600px;
+      /* width: 600px; */
+      /* background-attachment: fixed; */
+      background-color: black;
+      background-position-x: center;
+      text-align: center;
+      padding-top: 40px;
+  }
+  
+  .thirdSec img {
+      margin: auto;
+      display: block;
+      padding-bottom: 10px;
+      margin-top: 28px;
+  }
+  
+  .fa-apple {
+      font-size: 40px;
+  }
+  
+  .thirdSec h5 {
+      color: rgb(156, 26, 26);
+      font-size: 18px;
+      /* font-weight: lighter; */
+      letter-spacing: 3px;
+  }
+  
+  .thirdSec h1 {
+      font-size: 40px;
+      color: rgb(240, 240, 240);
+  }
+  
+  .thirdSec h3 {
+      font-size: 27px;
+      /* font-weight: lighter; */
+      color: rgb(228, 228, 228);
+      margin: 7px 0px 12px 0px;
+  }
+  
+  .thirdSec p {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: rgb(119, 119, 119);
+      /* text-shadow: 1px 0px 2px rgb(218, 218, 218); */
+  }
+  
+  .thirdSec a {
+      color: #0071E3;
+      font-size: 23px;
+      margin: 0px 15px;
+  }
+  /* ************ four Section styling ************ */
+  
+  .fourSection {
+      display: flex;
+      justify-content: center;
+      height: 594px;
+      /* background-color: rgb(221, 31, 31); */
+      margin-top: 13px;
+  }
+  
+  .wwdc21 {
+      width: 49%;
+      background-color: rgb(0, 0, 0);
+      height: 580px;
+      color: white;
+      /* background-attachment: fixed; */
+      text-align: center;
+      padding-top: 60px;
+  }
+  /* ********** wwdc21 styling ************** */
+  
+  .wwdc21 img {
+      margin: auto;
+      width: 97.5%;
+      height: 71.46%;
+      display: block;
+      position: relative;
+      bottom: -14px;
+      right: 7px;
+      /* padding-bottom: 150px; */
+  }
+  
+  .wwdc21 h1 {
+      font-size: 40px;
+  }
+  
+  .wwdc21 h3 {
+      font-weight: lighter;
+      font-size: 22px;
+      /* font-weight: bold; */
+      text-shadow: 1px 0px 1px rgb(104, 103, 103);
+      margin-bottom: 10px;
+  }
+  
+  .wwdc21 a {
+      font-size: 18px;
+      color: #0071E3;
+  }
+  /* ********** ipad sir styling styling ************** */
+  
+  .ipadAir {
+      background-image: url('../images/air.jpg');
+      width: 49%;
+      /* background-color: black; */
+      background-repeat: no-repeat;
+      height: 635px;
+      padding-top: 60px;
+      /* background-attachment: fixed; */
+      background-position-x: center;
+      text-align: center;
+  }
+  
+  .ipadAir h1 {
+      font-size: 40px;
+  }
+  
+  .ipadAir h3 {
+      font-size: 21px;
+      font-weight: lighter;
+      text-shadow: 1px 0px 1px rgb(219, 219, 219);
+      color: rgb(51, 51, 51);
+      margin-bottom: 13px;
+  }
+  
+  .ipadAir a {
+      font-size: 18px;
+      color: #0071E3;
+      padding: 0px 10px;
+  }
+  /* ************ five Section styling ************ */
+  
+  .fiveSection {
+      display: flex;
+      justify-content: center;
+      height: 587px;
+      /* background-color: rgb(221, 31, 31); */
+      margin-top: 13px;
+  }
+  
+  .fitness {
+      width: 49%;
+      background-color: rgb(255, 255, 255);
+      height: 580px;
+      color: rgb(0, 0, 0);
+      /* background-attachment: fixed; */
+      text-align: center;
+      padding-top: 60px;
+  }
+  /* ********** fitness styling ************** */
+  
+  .fitness img {
+      margin: auto;
+      width: 97.5%;
+      height: 71.46%;
+      display: block;
+      position: relative;
+      bottom: -14px;
+      right: 7px;
+      margin-top: 20px;
+      /* padding-bottom: 150px; */
+  }
+  
+  .fitness h1 {
+      font-size: 40px;
+  }
+  
+  .fitness h3 {
+      font-weight: lighter;
+      font-size: 22px;
+      /* font-weight: bold; */
+      text-shadow: 1px 0px 1px rgb(173, 173, 173);
+      margin-bottom: 10px;
+      color: rgb(65, 65, 65);
+  }
+  
+  .fitness a {
+      font-size: 18px;
+      color: #0071E3;
+      padding: 0px 10px;
+  }
+  /* ********** appstore sir styling styling ************** */
+  
+  .appStore {
+      background-image: url('../images/appstore.jpg');
+      width: 49%;
+      /* background-color: black; */
+      background-repeat: no-repeat;
+      height: 570px;
+      padding-top: 60px;
+      /* background-attachment: fixed; */
+      background-position-x: center;
+      text-align: center;
+  }
+  
+  .appStore h1 {
+      font-size: 40px;
+  }
+  
+  .appStore h3 {
+      font-size: 21px;
+      font-weight: lighter;
+      text-shadow: 1px 0px 1px rgb(75, 148, 177);
+      color: rgb(22, 21, 24);
+      margin-bottom: 13px;
+  }
+  
+  .appStore a {
+      font-size: 18px;
+      color: #1b1b1b;
+      padding: 0px 10px;
+  }
+  /* ************ sex Section styling ************ */
+  
+  .sixSection {
+      display: flex;
+      justify-content: center;
+      height: 587px;
+      /* background-color: rgb(221, 31, 31); */
+      margin-top: 13px;
+  }
+  
+  .one {
+      width: 49%;
+      background-color: rgb(255, 255, 255);
+      height: 580px;
+      color: rgb(0, 0, 0);
+      /* background-attachment: fixed; */
+      text-align: center;
+      padding-top: 60px;
+  }
+  /* ********** one styling ************** */
+  
+  .one img {
+      margin: auto;
+      width: 97.5%;
+      height: 71.46%;
+      display: block;
+      position: relative;
+      bottom: -14px;
+      right: 7px;
+      margin-top: 20px;
+      /* padding-bottom: 150px; */
+  }
+  
+  .one h1 {
+      font-size: 40px;
+  }
+  
+  .one h3 {
+      font-weight: lighter;
+      font-size: 22px;
+      /* font-weight: bold; */
+      text-shadow: 1px 0px 1px rgb(173, 173, 173);
+      margin-bottom: 10px;
+      color: rgb(65, 65, 65);
+  }
+  
+  .one a {
+      font-size: 18px;
+      color: #0071E3;
+      padding: 0px 10px;
+  }
+  /* ********** tv sir styling styling ************** */
+  
+  .tv {
+      background-image: url('../images/tv.jpg');
+      width: 49%;
+      /* background-color: black; */
+      background-repeat: no-repeat;
+      height: 570px;
+      padding-top: 60px;
+      /* background-attachment: fixed; */
+      background-position-x: center;
+      text-align: center;
+  }
+  
+  .tv h1 {
+      font-size: 40px;
+      color: white;
+  }
+  
+  .tv h3 {
+      font-size: 21px;
+      font-weight: lighter;
+      /* text-shadow: 1px 0px 1px rgb(75, 148, 177); */
+      color: rgb(255, 255, 255);
+      margin-bottom: 13px;
+  }
+  
+  .bottomHead {
+      font-size: 21px;
+      font-weight: bold !important;
+      /* text-shadow: 1px 0px 1px rgb(4, 166, 230); */
+      color: rgb(255, 255, 255) !important;
+      margin-top: 350px;
+  }
+  
+  .tv a {
+      font-size: 19px;
+      color: #ffffff;
+      padding: 0px 10px;
+      /* font-weight: bold; */
+  }
+  /* ************** about text***************** */
+  
+  .aboutMaindiv {
+      background-color: rgb(245, 245, 245);
+  }
+  
+  .aboutText {
+      width: 72%;
+      /* text-align: center; */
+      line-height: 22px;
+      font-size: 13px;
+      color: rgb(110, 110, 110);
+      text-shadow: 1px 0px 2px rgb(204, 202, 202);
+      justify-content: center;
+      margin: auto;
+      /* margin: 20px auto; */
+      padding-top: 13px;
+  }
+  
+  .aboutText p {
+      margin-bottom: 20px;
+  }
+  /* ************* about list ***************/
+  
+  .maindivList {
+      background-color: rgb(245, 245, 245);
+  }
+  
+  .lists {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+      justify-content: space-between;
+      width: 990px;
+      height: 450px;
+      margin: auto;
+  }
+  
+  .lists ul {
+      line-height: 25px;
+      margin: 10px 50px;
+      font-size: 13px;
+      color: rgb(109, 109, 109);
+  }
+  
+  .boldLi {
+      font-weight: bold;
+      color: rgb(77, 77, 77);
+      font-size: 13px;
+  }
+  /* ************* footer ***************** */
+  
+  .footerMaindiv {
+      background-color: rgb(245, 245, 245);
+  }
+  
+  .footer {
+      /* display: flex; */
+      width: 73%;
+      margin: auto;
+  }
+  
+  .footer p {
+      font-size: 13px;
+      color: #747575;
+      margin-bottom: 10px;
+  }
+  
+  .footer p a {
+      font-size: 13px;
+      color: #0071e3b0;
+      font-weight: bold;
+  }
+  
+  .copyRight {
+      display: flex;
+  }
+  
+  .copyRight p {
+      font-size: 13px;
+      color: #747575;
+  }
+  
+  .copyRight ul {
+      display: flex;
+      padding: 0px 9px;
+      margin-bottom: 19px;
+  }
+  
+  .copyRight ul hr {
+      color: brown;
+      height: 18px;
+  }
+  
+  .copyRight ul li {
+      padding: 0px 13px;
+  }
+  
+  .copyRight ul li a {
+      color: #747575;
+      font-size: 13px;
+  }
+  
+  .copyRight p {
+      margin-right: 25px;
+  }
