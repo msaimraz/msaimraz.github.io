@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+}
+.multiColorLine{
+    height: 3px;
+    background-image: linear-gradient(to right,rgb(114, 1, 1), rgb(105, 8, 68),rgb(9, 36, 155), rgb(13, 104, 55),red, yellow);
+    /* z-index: 1;
+    position: relative; */
+}
+
+.contactNav{
+    background-color: rgb(53, 52, 52);
+    color: rgba(245, 245, 245, 0.719);
+    height: 40px;
+}
+
+
+.contactNav ul{
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+    /* font-weight: bold; */
+}
+
+.contactNav ul li{
+    display: flex;
+    padding: 5px 20px;
+    /* font-size: 12px; */
+    font-size: 13px;
+}
+
+
+
+.fa-phone-alt, .fa-envelope{
+    margin: 4px 14px;
+}
+
+/* ************ Menu bar styling **********\ */
+.menuBar {
+    display: flex;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    box-shadow: 0px 3px 1px rgb(236, 236, 236);
+}
+
+.navLi ul{
+    display: flex;
+    height: 95px;
+
+    align-items: center;
+}
+
+.navLi ul li{
+    padding: 0px 14px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 1px solid rgba(47, 163, 241, 0);
+    padding-bottom: 5px;
+
+}
+
+
+.navLi ul li:hover{
+    color: rgb(47, 164, 241);
+    border-bottom: 1px solid rgb(47, 164, 241);
+}
+
+.active{
+    color: rgb(47, 164, 241) !important;
+    /* border-bottom: 1px solid rgb(47, 164, 241) !important; */
+}
+.logoMain img{
+    margin-top: 5px;
+}
+
+/* *********** sticky nav bar ************ */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 92px;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+/* ************* about Us Section *********** */
+.aboutUsSec {
+    background-color: rgb(160, 160, 160);
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.aboutUsSec h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: rgb(243, 243, 243);
+
+}
+
+.aboutUsSec ul{
+    display: flex;
+    color: rgb(228, 228, 228);
+    font-size: 18px;
+
+}
+
+.aboutUsSec ul li{
+    display: flex;
+    padding: 0px 10px;
+}
+
+/* ******** about text and image styling ********* */
+.aboutTextImg{
+    display: flex;
+    padding: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutText{
+    flex: 1;
+    padding: 0px 20px;
+
+}
+
+.aboutText h3{
+    color: rgb(45, 166, 246);
+    font-size: 28px;
+}
+
+.aboutText h1{
+    font-size: 45px;
+    margin: 20px 0px;
+}
+.aboutText p{
+    font-size: 16px;
+    color: rgb(156, 156, 156);
+    line-height: 21px;
+} 
+
+.noneText{
+    font-weight: bold;
+    color: rgb(114, 114, 114);
+}
+
+.aboutImg{
+    flex: 1;
+    /* align-items: center; */
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.aboutImg img{
+    width: 95%;
+    /* height: 50%; */
+}
+
+
+/* ************** second Section styling *********** */
+.secondSec{
+    height: 500px;
+    background-image: url('./images/bg_countup.jpg');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* /* width: 100%; */
+    /* padding: 0px 30px;  */
+}
+
+.youtubeVideo {
+    width: 40%;
+    /* background-color: rgb(138, 17, 17); */
+    /* flex: 1; */
+    /* position: relative;
+    top: 142px;
+    left: 160px; */
+}
+
+.headPara{
+    /* flex: 1; */
+    /* background-color: aquamarine; */
+    width: 40%;
+    text-align: center;
+    color: white;
+    
+}
+
+.headPara h1{
+    font-size: 41px;
+    padding-bottom: 17px;
+
+}
+
+.headPara p{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* <!-- ***************** meet our teachers Div *************** --> */
+
+
+
+
+
+.teachersText{
+    text-align: center;
+    width: 88%;
+    margin: auto;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.teachersText h1{
+    font-size: 44px;
+}
+
+.teachersText i{
+    color: rgb(235, 220, 18);
+    font-size: 22px;
+    margin: 12px 0px;
+}
+
+.teachersText p{
+    color: rgb(129, 129, 129);
+}
+
+
+ /* **************** teachers profile styling **************** */
+ .teachersImages{
+     display: flex;
+     justify-content: center;
+     margin: 10px 0px 55px 0px;
+ }
+
+ .teacherProfile{
+     width: 300px;
+     margin: 20px 40px;
+     text-align: center;
+ }
+
+ .activeTeacher img{
+    border: 20px solid rgba(110, 204, 241, 0.52) !important;
+
+ }
+
+ .teacherProfile img{
+     border-radius: 50%;
+     border: 20px solid rgb(250, 250, 250);
+     box-shadow: 0px 0px 4px rgb(233, 233, 233);
+ }
+
+ .teacherProfile h4{
+     font-weight: lighter;
+     font-size: 18px;
+     color: rgb(88, 88, 88);
+     margin-top: 10px;
+ }
+
+ .teacherProfile h3{
+     color: rgba(96, 207, 251, 0.822);
+     font-weight: lighter;
+     margin: 10px 0px;
+ }
+
+ .teacherProfile p{
+    color: rgb(88, 88, 88);
+
+ }
+
+
+ /* ***************** footer pic ************ */
+ .footerPic{
+     background-image: url('./images/bg-footer.jpg');
+     height: 730px;
+     background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+     
+ }
+
+ .footerLogo{
+     display: flex;
+     justify-content: center;
+ }
+
+ .footerLogo img{
+     width: 200px;
+     height: 200px;
+     margin-top: 13px;
+     /* margin: auto; */
+ } 
+
+
+
+
+ /* *********** webDetails ********* */
+ .webDetails{
+     display: flex;
+     padding: 60px;
+ }
+
+ .webDetails ul{
+     width: 300px;
+     margin: 0px 20px;
+ }
+
+ .webDetails ul li{
+        padding: 10px 0px;
+        font-size: 13px;
+        line-height: 19px;
+        color: rgb(170, 170, 170);
+
+}
+
+.boldLi{
+    font-size: 20px !important;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+}
+
+.liImages li img{
+    width: 135px;
+
+}
+
+
+/* ********** footer ************** */
+.footer{
+    display: flex;
+    height: 75px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+}
+
+.footer ul{
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(195, 195, 195);
+    padding: 0px;
+}
+
+.footer ul li{
+    padding: 0px 10px;
+}
+
+.footer p{
+    color: rgb(187, 187, 187);
+    font-size: 15px;
+}
+
+.footer a{
+    color: rgb(61, 153, 240);
+    font-size: 15px;
+}
+
+
+
+
+
