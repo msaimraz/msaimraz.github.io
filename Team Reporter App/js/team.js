@@ -93,7 +93,7 @@ let displayFunc = () => {
     //    showing team members on main page
     for (let i = 0; i < curruntTeam.members.length; i++) {
         teamMembers.innerHTML += `
-        <li class="membersLi" id="${i}">${curruntTeam.members[i]}<i id="${i}" onclick="deletMemberFunc(this,this.id)" class="bi bi-x-circle-fill "></i></li>`
+        <li class="membersLi" id="${i}">${curruntTeam.members[i]}<i id="${i}" onclick="deletMemberFunc(this,this.id)" class="fas fa-user-times"></i></li>`
         showingMembers.push(curruntTeam.members[i])
     }
 
@@ -141,7 +141,7 @@ let displayQuestFunc = () => {
             // loop for displaying question
         for (let i = 0; i < curruntTeam.questions.length; i++) {
             questionUl.innerHTML += `
-                    <li id="${i}" class="list-group-item"><div>${curruntTeam.questions[i].q}</div><div><i id="${i}" onclick="deleteQuest(this.id,this)" class="bi bi-trash"></i></div></li>`
+                    <li id="${i}" class="list-group-item"><div>${curruntTeam.questions[i].q}</div><div><i id="${i}" onclick="deleteQuest(this.id,this)" class="fas fa-trash"></i></div></li>`
         }
 
     }

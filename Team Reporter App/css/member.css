@@ -38,7 +38,7 @@
     font-weight: 500;
 }
 
-.bi-x-circle-fill {
+.fa-user-times {
     cursor: pointer;
     /* background-color: aqua; */
     padding: 4px 7px;
@@ -125,7 +125,7 @@ input[type=number]:focus,
     padding-left: 10px;
 }
 
-.bi-x-circle-fill {
+.fa-user-times {
     margin-right: -29px;
     /* background-color: rgb(170, 71, 71); */
 }
@@ -167,10 +167,6 @@ input[type=number]:focus,
         /* width: 40vw; */
         /* font-weight: 500; */
         font-size: 18px;
-    }
-    .bi-x-circle-fill {
-        /* margin-right: -10px; */
-        /* background-color: rgb(170, 71, 71); */
     }
     #deleteTeamDiv button {
         margin-left: 8px;

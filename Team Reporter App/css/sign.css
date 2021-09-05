@@ -6,7 +6,7 @@
 }
 
 .banner {
-    background-image: url(/sign.png);
+    background-image: url(../images/sign.png);
 }
 
 .head {
@@ -33,11 +33,11 @@
     font-style: oblique;
 }
 
-.innerDiv {
+.form_section {
     border: 6px solid aliceblue;
     border-radius: 12px;
     margin-top: 2%;
-    margin-right: 12%;
+    margin-right: 8%;
     text-align: center;
 }
 
