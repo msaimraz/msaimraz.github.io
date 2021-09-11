@@ -1,17 +1,13 @@
-// getting elements from dom 
-let InputUser = document.getElementById("InputUser");
-let InputEmail = document.getElementById("InputEmail");
-let InputPassword1 = document.getElementById("InputPassword1");
-let InputPassword2 = document.getElementById("InputPassword2");
+let user_Up = document.getElementById("user_Up");
+let email_Up = document.getElementById("email_Up");
+let pass1_Up = document.getElementById("pass1_Up");
+let pass2_Up = document.getElementById("pass2_Up");
 let submit = document.getElementById("submit")
 let alertDiv = document.getElementById("alertDiv");
 let subForm = document.getElementById("subForm");
 let LoginHelp = document.getElementById("LoginHelp");
 
-
-
-
-// created class for user's input
+/////////////// user's input class
 class UserObj {
     constructor(name, email, password, userKey, partTeam, createdTeam) {
         this.name = name;
@@ -23,22 +19,16 @@ class UserObj {
     }
 }
 
-
-
-
-
-// created class for validating and clearing methods
 class AddUserData {
-    // validating user's input
     validate() {
         let userCond = true;
 
-        if (InputUser.value === "") {
-            InputUser.style.borderColor = "red";
+        if (user_Up.value === "") {
+            user_Up.style.borderColor = "red";
             userCond = false;
         }
         else {
-            InputUser.style.borderColor = "#ccc";
+            user_Up.style.borderColor = "#ccc";
         }
 
         let usersObj = localStorage.getItem("userObjLocal");
@@ -46,120 +36,90 @@ class AddUserData {
 
         if (usersObj) {
             for (let i = 0; i < usersObj.length; i++) {
-                if (usersObj[i].name === InputUser.value.toUpperCase()) {
-                    InputUser.style.borderColor = "red";
+                if (usersObj[i].name === user_Up.value.toUpperCase()) {
+                    user_Up.style.borderColor = "red";
                     userCond = false;
                     LoginHelp.innerHTML = `this username is not availabe,try another`
                 }
             }
             if (userCond === true) {
-                InputUser.style.borderColor = "#ccc";
+                user_Up.style.borderColor = "#ccc";
                 LoginHelp.innerHTML = ``
             }
         }
 
-        if (InputEmail.value === "") {
-            InputEmail.style.borderColor = "red";
+        if (email_Up.value === "") {
+            email_Up.style.borderColor = "red";
             userCond = false;
         }
         else {
-            InputEmail.style.borderColor = "#ccc";
+            email_Up.style.borderColor = "#ccc";
         }
-        if (InputPassword1.value === "") {
-            InputPassword1.style.borderColor = "red";
+        if (pass1_Up.value === "") {
+            pass1_Up.style.borderColor = "red";
             userCond = false;
         }
         else {
-            InputPassword1.style.borderColor = "#ccc";
+            pass1_Up.style.borderColor = "#ccc";
         }
-        if (InputPassword2.value === "") {
-            InputPassword2.style.borderColor = "red";
+        if (pass2_Up.value === "") {
+            pass2_Up.style.borderColor = "red";
             userCond = false;
         }
         else {
-            InputPassword2.style.borderColor = "#ccc";
+            pass2_Up.style.borderColor = "#ccc";
         }
-
-        // email validation regex
         var emailRgex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
-        if (emailRgex.test(InputEmail.value)) {
-            InputEmail.style.borderColor = "#ccc";
+        if (emailRgex.test(email_Up.value)) {
+            email_Up.style.borderColor = "#ccc";
 
         } else {
-            InputEmail.style.borderColor = "red";
+            email_Up.style.borderColor = "red";
             userCond = false;
-
         }
 
-        // validating password
-        if (InputPassword1.value !== InputPassword2.value) {
-            InputPassword1.style.borderColor = "red";
-            InputPassword2.style.borderColor = "red";
+        if (pass1_Up.value !== pass2_Up.value) {
+            pass1_Up.style.borderColor = "red";
+            pass2_Up.style.borderColor = "red";
             userCond = false;
 
         } else {
-            // InputPassword1.style.borderColor = "#ccc";
-            // InputPassword2.style.borderColor = "#ccc";
-
+            // pass1_Up.style.borderColor = "#ccc";
+            // pass2_Up.style.borderColor = "#ccc";
         }
         // console.log(userCond)    
         return userCond
-
-
-
     }
-
-    // resetting form after submit
     clear() {
         subForm.reset()
     }
-
-    // creating object after validating
-
     createObj() {
-        let data1 = new UserObj(InputUser.value.toUpperCase(), InputEmail.value, InputPassword1.value, new Date().getTime(), [], []);
+        let data1 = new UserObj(user_Up.value.toUpperCase(), email_Up.value, pass1_Up.value, new Date().getTime(), [], []);
         return data1
-
     }
 }
-
-// creating object from adduserdata class
 let user = new AddUserData();
 
-
-// submit event
 submit.addEventListener('click', event => {
-
-
-
-
-
-
-
     user.validate()
     if (user.validate()) {
         user.createObj();
         let userObbb = user.createObj();
-
-        // adding data to local storage
         let getfromLocal = localStorage.getItem("userObjLocal");
         if (getfromLocal === null) {
             var arr = [];
         } else {
             arr = JSON.parse(getfromLocal);
         }
-
         arr.push(userObbb)
         localStorage.setItem("userObjLocal", JSON.stringify(arr))
-
         console.log(getfromLocal)
         user.clear()
     } else {
         console.log("user cond false")
-
     }
     // console.log("submitted")
     event.preventDefault()
 })
-console.log(InputUser);
+console.log(user_Up);
