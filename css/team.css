@@ -5,16 +5,12 @@ header {
 #mainHead {
     text-align: center;
     margin-top: 12px;
-    /* border-bottom: 1px solid #ccc; */
-    /* background-color: rgb(124, 82, 82); */
 }
 
 #teamMembers {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* border: 1px solid #ccc; */
     height: 100px;
     justify-content: center;
     margin-top: 10px;
@@ -30,30 +26,24 @@ header {
     width: 150px;
     text-align: center;
     border-radius: 20px;
-    /* cursor: pointer; */
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
     border: 1px solid #ccc;
     font-weight: 500;
 }
 
 .fa-user-times {
     cursor: pointer;
-    /* background-color: aqua; */
     padding: 4px 7px;
 }
 
 #questionUl {
     min-height: 240px;
-    /* margin-left: 100px; */
     margin-bottom: 30px;
     text-transform: uppercase;
-    /* border: 1px solid #ccc; */
 }
 
 #questionUl li {
-    /* background-color: rgb(151, 94, 94); */
     border: none;
     border-bottom: 1px solid #ccc !important;
     margin: 10px 10px;
@@ -68,7 +58,6 @@ header {
 
 .fa-trash {
     cursor: pointer;
-    /* background-color: blue; */
     padding: 10px;
     border-radius: 10px;
 }
@@ -84,7 +73,6 @@ header {
 #questions,
 h4 {
     text-transform: uppercase;
-    /* text-align: center; */
     color: aliceblue;
     text-decoration: underline;
 }
@@ -114,7 +102,6 @@ h4 {
 
 .fa-user-times {
     margin-right: -29px;
-    /* background-color: rgb(170, 71, 71); */
 }
 
 .memberHead {

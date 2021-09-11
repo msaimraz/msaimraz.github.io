@@ -13,8 +13,6 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* border: 1px solid #ccc; */
     height: 100px;
     justify-content: center;
     margin-top: 10px;
@@ -30,17 +28,14 @@
     width: 150px;
     text-align: center;
     border-radius: 20px;
-    /* cursor: pointer; */
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
     border: 1px solid #ccc;
     font-weight: 500;
 }
 
 .fa-user-times {
     cursor: pointer;
-    /* background-color: aqua; */
     padding: 4px 7px;
 }
 

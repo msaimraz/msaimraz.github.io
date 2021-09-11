@@ -1,8 +1,6 @@
-let qA = document.getElementById("qA");
+let que_ans = document.getElementById("que_ans");
 let userName = document.getElementById("userName");
-let reportsSec = document.getElementById("reportsSec");
-
-
+let reportSection = document.getElementById("reportSection");
 // getting data from localStorage
 let usersObj = localStorage.getItem("userObjLocal");
 usersObj = JSON.parse(usersObj);
@@ -24,9 +22,8 @@ if (getUserFromLocal) {
     window.location = 'index.html'
 }
 
-
 if (curruntTeam.reports.length == 0) {
-    reportsSec.innerHTML = `<hr><p>no one has submitted answers.`
+    reportSection.innerHTML = `<hr><p>no one has submitted answers.`
 } else {
     // console.log(Object.keys(curruntTeam.reports[0]))
     let html = [];
@@ -57,7 +54,7 @@ if (curruntTeam.reports.length == 0) {
 
                 // }
 
-                // qA.innerHTML = `${html}`
+                // que_ans.innerHTML = `${html}`
 
 
                 // userName.innerHTML += ` <p >${userHtml[i]}</p> `
@@ -70,9 +67,9 @@ if (curruntTeam.reports.length == 0) {
         }
         for (let d = 0; d < html.length; d++) {
             console.log(html[d])
-            qA.innerHTML += `
+            que_ans.innerHTML += `
             
-            <div id="qA">
+            <div id="que_ans">
             <p>${html[d]}</p>
             
             

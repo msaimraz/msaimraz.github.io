@@ -2,7 +2,7 @@
     background-image: url(../images/login.png);
 }
 
-#reportsSec {
+#reportSection {
     font-weight: 400;
     line-height: 130%;
 }
@@ -28,7 +28,7 @@
     color: aliceblue;
 }
 
-#reportsSec p {
+#reportSection p {
     color: aliceblue;
     text-transform: uppercase;
 }

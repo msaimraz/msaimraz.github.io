@@ -79,14 +79,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: -3px;
-    /* padding: 0px 8px; */
-    /* text-decoration: underline; */
-    /* padding: 0px 12px; */
     color: rgb(0, 0, 0);
 }
 
 .card-body:hover {
-    /* background-color: rgba(164, 202, 246, 0.315); */
     cursor: pointer;
     border: 1px solid rgb(70, 70, 70);
 }
@@ -100,7 +96,6 @@
 
 .addedMembers li {
     padding: 5px 18px;
-    /* border: 1px solid #ccc; */
     margin: 4px 10px;
     border-radius: 16px;
     width: 120px;
@@ -148,7 +143,6 @@
 
 #teamSpan {
     color: black;
-    /* font-weight: 500; */
     font-size: 22px;
 }
 
@@ -198,7 +192,6 @@
     }
     #teamSpan {
         color: black;
-        /* font-weight: 500; */
         font-size: 20px;
     }
     .card-body h5 {
