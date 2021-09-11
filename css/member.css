@@ -90,7 +90,6 @@ input[type=number]:focus,
 
 .bi-trash {
     cursor: pointer;
-    /* background-color: blue; */
     padding: 10px;
     border-radius: 10px;
 }
@@ -127,7 +126,6 @@ input[type=number]:focus,
 
 .fa-user-times {
     margin-right: -29px;
-    /* background-color: rgb(170, 71, 71); */
 }
 
 .memberHead {
@@ -141,38 +139,3 @@ input[type=number]:focus,
     width: 300px !important;
 }
 
-#deleteTeamDiv {
-    display: flex;
-    justify-content: center;
-}
-
-#deleteTeamDiv button {
-    margin-bottom: 20px;
-    width: 300px;
-}
-
-@media screen and (max-width: 570px) {
-    #questionUl li {
-        /* background-color: rgb(151, 94, 94); */
-        width: 98%;
-    }
-    #teamMembers {
-        margin-left: -20px;
-    }
-    .btn-primary {
-        width: 95%;
-        margin-left: 8px;
-    }
-    #teamMembers li {
-        /* width: 40vw; */
-        /* font-weight: 500; */
-        font-size: 18px;
-    }
-    #deleteTeamDiv button {
-        margin-left: 8px;
-    }
-    #submitBtn {
-        width: 97%;
-        margin-left: 6px;
-    }
-}

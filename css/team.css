@@ -140,7 +140,7 @@ h4 {
 
 @media screen and (max-width: 570px) {
     #questionUl li {
-        /* background-color: rgb(151, 94, 94); */
+        
         width: 98%;
     }
     #teamMembers {
@@ -151,34 +151,15 @@ h4 {
         margin-left: 8px;
     }
     #teamMembers li {
-        /* width: 40vw; */
-        /* font-weight: 500; */
         font-size: 18px;
-    }
-    .fa-user-times {
-        /* margin-right: -10px; */
-        /* background-color: rgb(170, 71, 71); */
     }
     #deleteTeamDiv button {
         margin-left: 8px;
     }
     .header {
         font-size: 16px !important;
-        /* background-color: aqua; */
     }
     .btn-outline-secondary {
         width: 40vw !important;
     }
-    /* #settings{
-        border-bottom: 1px solid rgb(17, 17, 17);
-    
-    } */
-    /* .header:hover{
-        border-bottom: 1px solid rgb(17, 17, 17);
-    }
-    
-    #settings{
-        border-bottom: 1px solid rgb(17, 17, 17);
-    
-    } */
 }

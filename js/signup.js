@@ -162,3 +162,4 @@ submit.addEventListener('click', event => {
     // console.log("submitted")
     event.preventDefault()
 })
+console.log(InputUser);
