@@ -33,6 +33,11 @@
     text-transform: uppercase;
 }
 
+#que_ans{
+    color: cornsilk;
+    font-size: large;
+}
+
 @media screen and (max-width: 570px) {
     .btn-outline-secondary {
         width: 40vw !important;
