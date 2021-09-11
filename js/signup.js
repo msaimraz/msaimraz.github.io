@@ -3,9 +3,8 @@ let email_Up = document.getElementById("email_Up");
 let pass1_Up = document.getElementById("pass1_Up");
 let pass2_Up = document.getElementById("pass2_Up");
 let submit = document.getElementById("submit")
-let alertDiv = document.getElementById("alertDiv");
 let subForm = document.getElementById("subForm");
-let LoginHelp = document.getElementById("LoginHelp");
+let error = document.getElementById("error");
 
 /////////////// user's input class
 class UserObj {
@@ -39,12 +38,12 @@ class AddUserData {
                 if (usersObj[i].name === user_Up.value.toUpperCase()) {
                     user_Up.style.borderColor = "red";
                     userCond = false;
-                    LoginHelp.innerHTML = `this username is not availabe,try another`
+                    error.innerHTML = `this username is not availabe,try another`
                 }
             }
             if (userCond === true) {
                 user_Up.style.borderColor = "#ccc";
-                LoginHelp.innerHTML = ``
+                error.innerHTML = ``
             }
         }
 

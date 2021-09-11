@@ -29,7 +29,7 @@
             <span class="user-circle" onclick="openNav()"><i class="far fa-user-circle"></i> </span>
 
             <div>
-                <div id="alertDiv">
+                <div>
                     <h1 class="head">Sign Up</h1>
 
                 </div>
@@ -37,27 +37,27 @@
                 <div class="container-sm form_section">
                     <form id="subForm">
                         <div class="mb-3">
-                            <label for="user_Up" class="form-label">User name</label>
-                            <input placeholder="please enter your name" type="text" class="form-control" id="user_Up" aria-describedby="emailHelp">
-                            <div id="LoginHelp" class="form-text text-danger"></div>
+                            <label for="user_Up" class="form-label">FullName</label>
+                            <input placeholder="Enter your name" type="text" class="form-control" id="user_Up" >
+                            <div id="error" class="form-text text-danger"></div>
 
                         </div>
                         <div class="mb-3">
-                            <label for="email_Up" class="form-label">Email address</label>
-                            <input placeholder="please enter your valid email address" type="email" class="form-control" id="email_Up" aria-describedby="emailHelp">
+                            <label for="email_Up" class="form-label">Email Address</label>
+                            <input placeholder="Enter your email address" type="email" class="form-control" id="email_Up" >
 
                         </div>
                         <div class="mb-3">
                             <label for="pass1_Up" class="form-label">Password</label>
-                            <input placeholder="please enter your password" type="password" class="form-control" minlength="8" id="pass1_Up" aria-describedby="emailHelp">
+                            <input placeholder="Enter your password" type="password" class="form-control" id="pass1_Up" >
 
                         </div>
                         <div class="mb-3">
                             <label for="pass2_Up" class="form-label">Confirm Password</label>
-                            <input placeholder="please re-enter your password" type="password" class="form-control" minlength="8" id="pass2_Up">
+                            <input placeholder="Re-enter your password" type="password" class="form-control" id="pass2_Up">
                         </div>
                         <button type="submit" id="submit" class="btn ">Sign Up</button>
-                        <a href="signIn.html"> <button type="button" class="btn signupBtn ">Sign In</button> </a>
+                        <a href="signIn.html"> <button type="button" class="btn ">Sign In</button> </a>
                     </form>
                 </div>
 

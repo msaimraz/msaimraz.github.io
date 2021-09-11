@@ -1,8 +1,7 @@
-let loginEmail1 = document.getElementById("loginEmail1");
-let loginPassword = document.getElementById("loginPassword");
+let email_In = document.getElementById("email_In");
+let pass_In = document.getElementById("pass_In");
 let login = document.getElementById("login");
-let mainDiv = document.getElementById("mainDiv");
-let LoginHelp = document.getElementById("LoginHelp");
+let error = document.getElementById("error");
 let userObjLogin;
 var userLogin = false;
 
@@ -16,7 +15,7 @@ console.log(userObj)
 login.addEventListener('click', () => {
 
     for (let i = 0; i < userObj.length; i++) {
-        if (userObj[i].email === loginEmail1.value && userObj[i].password === loginPassword.value) {
+        if (userObj[i].email === email_In.value && userObj[i].password === pass_In.value) {
             userLogin = true;
             userObjLogin = userObj[i]
         }
