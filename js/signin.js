@@ -1,7 +1,6 @@
 let loginEmail1 = document.getElementById("loginEmail1");
 let loginPassword = document.getElementById("loginPassword");
 let login = document.getElementById("login");
-let mainDiv = document.getElementById("mainDiv");
 let LoginHelp = document.getElementById("LoginHelp");
 let userObjLogin;
 var userLogin = false;
