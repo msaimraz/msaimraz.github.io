@@ -47,3 +47,15 @@
     color: black;
     font-weight: bold;
 }
+
+@media screen and (max-height: 650px) {
+    .banner{
+        padding-bottom: 150vh;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .banner{
+        padding-bottom: 250vh;
+    }
+}
