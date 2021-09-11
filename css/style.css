@@ -80,18 +80,6 @@ header {
     cursor: pointer;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-    
-}
-
 /* Footer */
 
 footer{
@@ -114,7 +102,38 @@ footer{
     border: none;
     color: #fff;
 }
+/******************************** Media Query  ********************************/
 
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    
+}
+@media screen and (max-height: 650px) {
+    .banner{
+        height: 150vh;
+    }
+    /* .form_section{
+        padding-bottom: 50vh;
+    } */
+
+}
+
+@media screen and (max-height: 450px) {
+    .banner{
+        height: 300vh;
+    }
+    /* .form_section{
+        padding-bottom: 100vh;
+    } */
+
+}
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .divff{

@@ -49,22 +49,3 @@
 }
 
 
-@media screen and (max-height: 650px) {
-    .banner{
-        height: 150vh;
-    }
-    /* .form_section{
-        padding-bottom: 50vh;
-    } */
-
-}
-
-@media screen and (max-height: 450px) {
-    .banner{
-        height: 300vh;
-    }
-    /* .form_section{
-        padding-bottom: 100vh;
-    } */
-
-}
