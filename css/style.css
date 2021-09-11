@@ -5,31 +5,27 @@
     list-style-type: none;
 }
 
-body,
-html {
-    height: 100%;
-}
 
 header {
     height: 100%;
     box-sizing: border-box;
-}
+} 
 
-.banner {
+/* .banner {
     background-image: url(../images/Teamwork.png);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
-}
+} */
 
 
-/* .banner video {
+.banner video {
     position: absolute;
     width: 100%;
-    height: 100%;
-} */
+    /* height: 100%; */
+}
 
 .user-circle {
     font-size: 50px;
@@ -95,6 +91,12 @@ header {
 
 /* Footer */
 
+footer{
+    bottom: 0px;
+    left: 0;
+    position: fixed;
+    right: 0;
+}
 .divff {
     background-color: #000;
     text-align: center;
@@ -109,21 +111,6 @@ header {
     border: none;
     color: #fff;
 }
-
-
-
- /* Medium devices (tablets, 768px and up)
- @media (max-width: 768px) { 
-    
-    
- }
-
-/* Small devices (landscape phones, 576px and up) 
-@media (max-width: 576px) { 
-    
- }  */ 
-
-
 
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
