@@ -142,19 +142,19 @@ header {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .divff{
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .divff{
-        font-size: 22px;
+        font-size: 16px;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .divff{
-        font-size: 26px;
+        font-size: 18px;
     }
 }
