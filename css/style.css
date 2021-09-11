@@ -1,25 +1,34 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style-type: none;
 }
 
-body{
-    background-color: dimgray;
+body,
+html {
+    height: 100%;
 }
 
-/* .banner {
+header {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.banner {
     background-image: url(../images/Teamwork.png);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
-} */
+}
 
-/* 
-.banner video {
+
+/* .banner video {
     position: absolute;
     width: 100%;
+    height: 100%;
 } */
 
 .user-circle {
@@ -87,10 +96,10 @@ body{
 /* Footer */
 
 footer{
-    bottom: 0px;
-    left: 0;
     position: fixed;
+    bottom: 0;
     right: 0;
+    left: 0;
 }
 .divff {
     background-color: #000;
