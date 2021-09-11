@@ -3,7 +3,7 @@ let email_Up = document.getElementById("email_Up");
 let pass1_Up = document.getElementById("pass1_Up");
 let pass2_Up = document.getElementById("pass2_Up");
 let submit = document.getElementById("submit")
-let subForm = document.getElementById("subForm");
+let reset_form = document.getElementById("reset_form");
 let error = document.getElementById("error");
 
 /////////////// user's input class
@@ -91,7 +91,7 @@ class AddUserData {
         return userCond
     }
     clear() {
-        subForm.reset()
+        reset_form.reset()
     }
     createObj() {
         let data1 = new UserObj(user_Up.value.toUpperCase(), email_Up.value, pass1_Up.value, new Date().getTime(), [], []);
