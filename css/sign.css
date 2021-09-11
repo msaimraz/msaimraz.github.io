@@ -7,6 +7,7 @@
 
 .banner {
     background-image: url(../images/sign.png);
+    height: 200vh;
 }
 
 .head {
@@ -17,7 +18,7 @@
 }
 
 .form-control {
-    width: 70%;
+    width: 80%;
     margin-left: 10%;
     border: 3px dashed grey;
 }
@@ -37,7 +38,6 @@
     border: 6px solid aliceblue;
     border-radius: 12px;
     margin-top: 2%;
-    margin-right: 8%;
     text-align: center;
 }
 
